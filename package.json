@@ -1,8 +1,8 @@
 {
-  "name": "react-homework-template",
+  "name": "example-login",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AnastasiyaNK.github.io/goit-react-hw-06-phonebook/",
+  "homepage": "https://AnastasiyaNK.github.io/example-login/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.16.3",

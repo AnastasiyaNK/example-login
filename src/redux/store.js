@@ -1,5 +1,4 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { phoneBookReducer } from './phoneBookSlice';
 
 import {
   persistStore,
@@ -12,19 +11,18 @@ import {
   REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
+import { userReducer } from './userSlice';
 
 const persistConfig = {
-  key: 'phoneBook',
-  whitelist: ['contacts'],
+  key: 'user',
+  whitelist: ['token'],
 
   storage,
 };
 
-const persistedReducer = persistReducer(persistConfig, phoneBookReducer);
-
 export const store = configureStore({
   reducer: {
-    phoneBook: persistedReducer,
+    auth: persistReducer(persistConfig, userReducer),
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({

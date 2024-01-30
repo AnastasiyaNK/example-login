@@ -23,44 +23,47 @@ const LoginForm = () => {
 
   return (
     <StyledLoginForm onSubmit={formik.handleSubmit}>
-      <h2>Sign Up</h2>
+      <h2 className="title">Sign Up</h2>
       <label className="label">
         <span className="label-text">Enter your email</span>
-        <input
-          className="input"
-          name="email"
-          type="email"
-          placeholder="Email"
-          onChange={formik.handleChange}
-          value={formik.values.email}
-        />
       </label>
+      <input
+        className="input"
+        name="email"
+        type="email"
+        placeholder="Email"
+        onChange={formik.handleChange}
+        value={formik.values.email}
+      />
       <label className="label">
         <span className="label-text">Enter your password</span>
-        <input
-          className="input"
-          name="password"
-          type="password"
-          placeholder="Password"
-          onChange={formik.handleChange}
-          value={formik.values.password}
-        />
       </label>
+      <input
+        className="input"
+        name="password"
+        type="password"
+        placeholder="Password"
+        onChange={formik.handleChange}
+        value={formik.values.password}
+      />
       <label className="label">
         <span className="label-text">Repeat password</span>
-        <input
-          className="input"
-          name="repeatPassword"
-          type="password"
-          placeholder="Repeat password"
-          onChange={formik.handleChange}
-          value={formik.values.repeatPassword}
-        />
       </label>
+      <input
+        className="input"
+        name="repeatPassword"
+        type="password"
+        placeholder="Repeat password"
+        onChange={formik.handleChange}
+        value={formik.values.repeatPassword}
+      />
+
       {formik.values.password !== formik.values.repeatPassword && (
         <div>Your Passwords must match</div>
       )}
-      <button type="submit">Sign Up</button>
+      <button className="butten" type="submit">
+        Sign Up
+      </button>
     </StyledLoginForm>
   );
 };

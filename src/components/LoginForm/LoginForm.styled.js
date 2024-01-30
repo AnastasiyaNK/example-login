@@ -2,12 +2,10 @@ import styled from 'styled-components';
 export const StyledLoginForm = styled.form`
   top: 50%;
   left: 60%;
-  // transform: translate(-50%, -50%);
   width: 100%;
   max-width: 384px;
-  min-height: 465px;
 
-  padding: 40px;
+  padding: 5px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -23,25 +21,18 @@ export const StyledLoginForm = styled.form`
     font-size: 26px;
     font-weight: 500;
     line-height: 1.2;
-    // margin-top: 16px;
   }
-  .label {
-    margin-top: 16px;
-    color: #2f2f2f;
-    position: relative;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.33;
-  }
+
   .label-text {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.3;
     display: flex;
-    // margin-top: 8px;
+    margin-top: 16px;
   }
   .input {
     color: #9ebbff;
+    margin-top: 8px;
 
     font-size: 16px;
     line-height: 1.2;
@@ -63,6 +54,7 @@ export const StyledLoginForm = styled.form`
     }
   }
   .butten {
+    margin-top: 16px;
     display: flex;
     padding: 10px 30px;
     justify-content: center;
@@ -84,5 +76,11 @@ export const StyledLoginForm = styled.form`
       background-color: #407bff;
       cursor: not-allowed;
     }
+  }
+  @media (min-width: 1440px) {
+   
+
+  @media (min-width: 768px) and (max-width: 1439px) {
+   
   }
 `;

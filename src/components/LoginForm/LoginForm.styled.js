@@ -13,7 +13,7 @@ export const StyledLoginForm = styled.form`
   margin-top: 120px;
   margin-bottom: 140px;
 
-  . block-right {
+  .block-right {
     display: flex;
   }
 
@@ -76,11 +76,13 @@ export const StyledLoginForm = styled.form`
       background-color: #407bff;
       cursor: not-allowed;
     }
-  }
-  @media (min-width: 1440px) {
-   
+    .link {
+      margin-top: 16px;
+      color: #407bff;
 
-  @media (min-width: 768px) and (max-width: 1439px) {
-   
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.25;
+    }
   }
 `;

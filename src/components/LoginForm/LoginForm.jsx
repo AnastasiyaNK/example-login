@@ -4,9 +4,11 @@ import { useFormik } from 'formik';
 import { useDispatch } from 'react-redux';
 
 import { apiUserRegister } from 'redux/userSlice';
+import { Link, useNavigate } from 'react-router-dom';
 
 const LoginForm = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
       email: '',
@@ -16,7 +18,11 @@ const LoginForm = () => {
     onSubmit: values => {
       if (values.password === values.repeatPassword) {
         const formData = { email: values.email, password: values.password };
-        dispatch(apiUserRegister(formData));
+        dispatch(apiUserRegister(formData))
+          .unwrap()
+          .then(() => {
+            navigate('/signin');
+          });
       }
     },
   });
@@ -64,6 +70,10 @@ const LoginForm = () => {
       <button className="butten" type="submit">
         Sign Up
       </button>
+
+      <Link to="/signin" className="link">
+        Sign In
+      </Link>
     </StyledLoginForm>
   );
 };

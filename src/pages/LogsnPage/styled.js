@@ -17,12 +17,12 @@ export const StyledLoginPage = styled.div`
   .block-right {
     position: relativ;
   }
-  @media (min-width: 768px) and (max-width: 1439px) {
-    margin-top: 0;
-    width: 100%;
-    height: 548px;
-    background-position: 80px;
-    z-index: -1;
-    background-image: url(${BottleSingTab});
-  }
+  // @media (min-width: 768px) and (max-width: 1439px) {
+  //   margin-top: 0;
+  //   width: 100%;
+  //   height: 548px;
+  //   background-position: 80px;
+  //   z-index: -1;
+  //   background-image: url(${BottleSingTab});
+  // }
 `;

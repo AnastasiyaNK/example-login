@@ -1,14 +1,15 @@
 import RegisterForm from 'components/RegisterForm/RegisterForm';
 import React from 'react';
 import { StyledWrapperPng } from './styled';
+import { StyledMainContainer } from 'components/Container.styled';
 
 const RegisterPage = () => {
   return (
-    <div>
-      <StyledWrapperPng>
+    <StyledWrapperPng>
+      <StyledMainContainer>
         <RegisterForm />
-      </StyledWrapperPng>
-    </div>
+      </StyledMainContainer>
+    </StyledWrapperPng>
   );
 };
 

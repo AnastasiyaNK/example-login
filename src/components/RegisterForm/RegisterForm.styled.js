@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const StyledRegisterContainer = styled.div`
   position: relative;
+  display: flex;
+  justify-content: end;
+  height: 100%;
+  align-items: center;
 `;
 
 export const StyledRegisterForm = styled.form`
@@ -9,15 +13,12 @@ export const StyledRegisterForm = styled.form`
   display: flex;
   flex-direction: column;
   padding: 5px;
-  transform: translate(200%, 70%);
+  width: 100%;
+  margin-right: 90px;
 
-
-
-
-    //   position: relative;
-    //   top: 50%;
-    // left: 50%;
-          
+  //   position: relative;
+  //   top: 50%;
+  // left: 50%;
 
   .title {
     color: #2f2f2f;
@@ -72,14 +73,13 @@ export const StyledRegisterForm = styled.form`
       background-color: #407bff;
       cursor: not-allowed;
     }
-
-    
   }
   .link {
     margin-top: 16px;
-    color:  #407bff;
-    
+    color: #407bff;
+
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.25; 
+    line-height: 1.25;
+  }
 `;

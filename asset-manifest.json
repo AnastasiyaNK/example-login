@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/example-login/static/css/main.5e3b3f4b.css",
-    "main.js": "/example-login/static/js/main.4ce47034.js",
+    "main.css": "/example-login/static/css/main.4a6dfb70.css",
+    "main.js": "/example-login/static/js/main.cbe85605.js",
     "static/media/bottle-sign-in-desk.png": "/example-login/static/media/bottle-sign-in-desk.ae104bfd8b47eb232ca0.png",
     "static/media/bottle-sign-in-tab.png": "/example-login/static/media/bottle-sign-in-tab.4bfc15850e29ecac5906.png",
+    "static/media/logo-water.svg": "/example-login/static/media/logo-water.3ed05534b551b01ed4ee3d754a1479f3.svg",
     "static/media/bubble-desktop.png": "/example-login/static/media/bubble-desktop.681c9a8df3c27872475b.png",
+    "static/media/cog-6-tooth.svg": "/example-login/static/media/cog-6-tooth.ec87edb4ed1a3bf916cf06ddf834ef40.svg",
     "index.html": "/example-login/index.html",
-    "main.5e3b3f4b.css.map": "/example-login/static/css/main.5e3b3f4b.css.map",
-    "main.4ce47034.js.map": "/example-login/static/js/main.4ce47034.js.map"
+    "static/media/user.svg": "/example-login/static/media/user.de90a9c8a20eaea6a7c4e378a5544246.svg",
+    "static/media/chevron-double-up.svg": "/example-login/static/media/chevron-double-up.c9a84c35642b7a78cab5ab89bbcb16a0.svg",
+    "static/media/arrow-right-on-rectangle.svg": "/example-login/static/media/arrow-right-on-rectangle.db2cc1cf6a6287e7afe775e6c5fa03f7.svg",
+    "main.4a6dfb70.css.map": "/example-login/static/css/main.4a6dfb70.css.map",
+    "main.cbe85605.js.map": "/example-login/static/js/main.cbe85605.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e3b3f4b.css",
-    "static/js/main.4ce47034.js"
+    "static/css/main.4a6dfb70.css",
+    "static/js/main.cbe85605.js"
   ]
 }
